@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import img from 'next/image'
 import Image from 'next/image'
+import Splash from './splash'
 export default class AppHeader extends React.Component {
     constructor() {
         super();
@@ -67,7 +68,7 @@ export default class AppHeader extends React.Component {
             <header className="header" id="header">
   <nav className="navbar container">
     <div className="navbar-inner">
-      <a className="navbar-brand" href="./"><img src="images/logo.png" className="img-fluid  white-logo"/><img src="images/logo.png" className="img-fluid blue-logo"/></a>
+      <Link className="navbar-brand" href="./"><img src="images/logo.png" className="img-fluid  white-logo"/><img src="images/logo.png" className="img-fluid blue-logo"/></Link>
       <div className="burger" id="burger">
         <span className="burger-line"></span>
         <span className="burger-line"></span>
@@ -185,12 +186,8 @@ export default class AppHeader extends React.Component {
   </nav>
 </header>
 
-<div className="splash-screen">
-    <div className="splash-box">
-    <img src="images/footer-logo-top.png" className="img-fluid ft-logo-top" alt="logo"/>
-    <img src="images/footer-logo-btm.png" className="img-fluid ft-logo-btm" alt="logo"/>
-    </div>
-</div>
+<Splash />
+
 </>
         )
     }

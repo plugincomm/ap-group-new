@@ -1,56 +1,6 @@
-$(document).ready(function(){
-    $(window).scrollTop(0);
+$(window).on("load", function() {
+  $(window).scrollTop(0);
 });
-
-var tml = gsap.timeline();
-
-if(window.screen.width > 1024) {
-    tml.to('.splash-screen .ft-logo-top',{
-	y : '-45%', 
-    		opacity: 1, 
-    		duration: .7, 
-    	}, "<"
-    )
-    .to('.splash-screen .ft-logo-btm',{
-    		y : '100%', 
-    		opacity: 1, 
-    		duration: .7, 
-    	}, "<"
-    )
-    .to('.splash-screen',{
-        opacity: 0, 
-		display : 'none',
-		duration: 1,
-		delay:1,
-	}
-    )
-
-}
-
-if(window.screen.width < 1024) {
-    tml.to('.splash-screen .ft-logo-top',{
-        y : '-45%', 
-		opacity: 1, 
-		duration: 1, 
-	}, "<"
-    )
-    .to('.splash-screen .ft-logo-btm',{
-    		y : '-150%', 
-    		opacity: 1, 
-    		duration: 1, 
-    	}, "<"
-    )
-    .to('.splash-screen',{
-        duration: 1,
-        opacity: 0, 
-		display : 'none',
-		duration: 1.7, 
-	}
-    )
-}
-
-
-
 
 $(document).ready(function(){
   $(".first-slider").owlCarousel({

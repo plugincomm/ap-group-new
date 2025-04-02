@@ -2,17 +2,19 @@ import React from 'react'
 import Layout from '../components/layout'
 //import Image from 'next/image'
 //import img from 'next/image'
+import Testimonals from '../components/testimonials'
 
 export default class IndexPage extends React.Component {
     render() {
         return (
             <Layout>                 
-                <div classNameName="banner-slider owl-crowsel-section">
-                    <div classNameName="container-fluid px-0">
-                        <video width="100%" height="100%" autoplay loop>
-                        <source src="images/AP-grp-hero-video.mp4" type="video/mp4" />
+                <div className="banner-slider owl-crowsel-section">
+                    <div className="container-fluid px-0">
+                        
+                        <video width="100%" height="100%" autoPlay muted loop>
+                            <source src="images/AP-grp-hero-video.mp4" type="video/mp4" />
                         </video>
-                        <div classNameName="arrow bounce">
+                        <div className="arrow bounce">
                         <a href="#"><img src="images/icon-chevron-down.png" /></a>
                         </div>
                     </div>
@@ -75,12 +77,14 @@ export default class IndexPage extends React.Component {
                  <h6>Ap Interior & Design Pvt. Ltd.</h6>
                 </a>
             </div>
+
+            {/*
             <div className="col02 col">
                 <a href="#!" className="wraper">
                  <div className="about-img"><img src="images/business-img3.jpg" className="img-fluid"/></div>
                  <h6>Astro Vaastupaay by <br/> Aditya Pareek Pvt. Ltd.</h6>
                 </a>
-            </div>
+            </div> */}
             <div className="col03 col">
                 <a href="#!" className="wraper">
                  <div className="about-img"><img src="images/business-img5.jpg" className="img-fluid"/></div>
@@ -322,7 +326,7 @@ export default class IndexPage extends React.Component {
     </div>
  </section>
  
- 
+
 <section className="about-product section-space section-egh">
     <div className="container">
         <div className="title-head title-head01 about-rice text-center">
@@ -330,112 +334,13 @@ export default class IndexPage extends React.Component {
             <div className="rating"><img src="images/rating.png" /></div>
             <h4>Real Results. Real Transformations. <br/> Now It&apos;s Your Turn.</h4>
         </div>
-        	
-       
     </div>
     
-    
-        <div className="testimonail-slider">	
-			<div className="owl-carousel testimonail-carousel1">
-				<div className="item bxs">
-				    <div className="box1">
-					<div className="info">							
-						<p>Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit. Etiam eu turpis molestie&comma; dictum est a&comma; mattis tellus. 
-                            Sed dignissim&comma; metus nec fringilla accumsan&comma; risus sem sollicitudin lacus&comma; ut interdum tellus elit sed risus. 
-                            Maecenas eget condimentum velit&comma; sit amet feugiat lectus. </p>
-						<div className="auth">
-						    <p><b>Lorem ipsum dolo</b></p>
-						    <p>Lorem ipsum</p>
-						</div>
-					</div>
-				   </div>
-				</div>
-				<div className="item bxs">
-				    <div className="box1">
-					<div className="info">							
-						<p>Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit. Etiam eu turpis molestie&comma; dictum est a&comma; mattis tellus. Sed dignissim&comma; metus nec fringilla accumsan&comma; risus sem sollicitudin lacus&comma; ut interdum tellus elit sed risus. Maecenas eget condimentum velit&comma; sit amet feugiat lectus. </p>
-						<div className="auth">
-						    <p><b>Lorem ipsum dolo</b></p>
-						    <p>Lorem ipsum</p>
-						</div>
-					</div>
-				   </div>
-				</div>
-				<div className="item bxs">
-				    <div className="box1">
-					<div className="info">							
-						<p>Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit. Etiam eu turpis molestie&comma; dictum est a&comma; mattis tellus. Sed dignissim&comma; metus nec fringilla accumsan&comma; risus sem sollicitudin lacus&comma; ut interdum tellus elit sed risus. Maecenas eget condimentum velit&comma; sit amet feugiat lectus. </p>
-						<div className="auth">
-						    <p><b>Lorem ipsum dolo</b></p>
-						    <p>Lorem ipsum</p>
-						</div>
-					</div>
-				   </div>
-				</div>
-				<div className="item bxs">
-				    <div className="box1">
-					<div className="info">							
-						<p>Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit. Etiam eu turpis molestie&comma; dictum est a&comma; mattis tellus. Sed dignissim&comma; metus nec fringilla accumsan&comma; risus sem sollicitudin lacus&comma; ut interdum tellus elit sed risus. Maecenas eget condimentum velit&comma; sit amet feugiat lectus. </p>
-						<div className="auth">
-						    <p><b>Lorem ipsum dolo</b></p>
-						    <p>Lorem ipsum</p>
-						</div>
-					</div>
-				   </div>
-				</div>
-				
-			</div>		 
-		</div>
-		
-		<div className="testimonail-slider">	
-			<div className="owl-carousel owl-theme testimonail-carousel2">
-			    <div className="item bxs">
-				    <div className="box1">
-					<div className="info">							
-						<p>Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit. Etiam eu turpis molestie&comma; dictum est a&comma; mattis tellus. Sed dignissim&comma; metus nec fringilla accumsan&comma; risus sem sollicitudin lacus&comma; ut interdum tellus elit sed risus. Maecenas eget condimentum velit&comma; sit amet feugiat lectus. </p>
-						<div className="auth">
-						    <p><b>Lorem ipsum dolo</b></p>
-						    <p>Lorem ipsum</p>
-						</div>
-					</div>
-				   </div>
-				</div>
-				<div className="item bxs">
-				    <div className="box1">
-					<div className="info">							
-						<p>Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit. Etiam eu turpis molestie&comma; dictum est a&comma; mattis tellus. Sed dignissim&comma; metus nec fringilla accumsan&comma; risus sem sollicitudin lacus&comma; ut interdum tellus elit sed risus. Maecenas eget condimentum velit&comma; sit amet feugiat lectus. </p>
-						<div className="auth">
-						    <p><b>Lorem ipsum dolo</b></p>
-						    <p>Lorem ipsum</p>
-						</div>
-					</div>
-				   </div>
-				</div>
-				<div className="item bxs">
-				    <div className="box1">
-					<div className="info">							
-						<p>Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit. Etiam eu turpis molestie&comma; dictum est a&comma; mattis tellus. Sed dignissim&comma; metus nec fringilla accumsan&comma; risus sem sollicitudin lacus&comma; ut interdum tellus elit sed risus. Maecenas eget condimentum velit&comma; sit amet feugiat lectus. </p>
-						<div className="auth">
-						    <p><b>Lorem ipsum dolo</b></p>
-						    <p>Lorem ipsum</p>
-						</div>
-					</div>
-				   </div>
-				</div>
-				<div className="item bxs">
-				    <div className="box1">
-					<div className="info">							
-						<p>Lorem ipsum dolor sit amet&comma; consectetur adipiscing elit. Etiam eu turpis molestie&comma; dictum est a&comma; mattis tellus. Sed dignissim&comma; metus nec fringilla accumsan&comma; risus sem sollicitudin lacus&comma; ut interdum tellus elit sed risus. Maecenas eget condimentum velit&comma; sit amet feugiat lectus. </p>
-						<div className="auth">
-						    <p><b>Lorem ipsum dolo</b></p>
-						    <p>Lorem ipsum</p>
-						</div>
-					</div>
-				   </div>
-				</div>	  
-			</div>		 
-		</div>	
+        <Testimonals />	
 </section>
+
+
+
 
             </Layout>
         )
