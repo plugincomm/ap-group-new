@@ -8,7 +8,15 @@ export default class IndexPage extends React.Component {
         <>
             <Layout>
                 {/* <!--================Home Banner Area =================--> */}
-                <h1>Contact Page</h1>
+                <div className="inside top-section">
+                    <div className="container-fluid px-0">
+                        
+                    <h1>Contact Page</h1>
+                     
+                    </div>
+                </div>
+                
+                
                 {/* <!--================Contact Area =================--> */}
             </Layout>
         </>

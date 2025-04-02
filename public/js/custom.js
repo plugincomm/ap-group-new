@@ -278,13 +278,13 @@ $(document).ready(function() {
 	})
 });
 
-$('#pagination-demo').twbsPagination({
+/*$('#pagination-demo').twbsPagination({
   totalPages: 35,
   visiblePages: 7,
   onPageClick: function (event, page) {
     $('#page-content').text('Page ' + page);
   }
-});
+});*/
 
 document.querySelectorAll(".sidebar-left .tab-box .tab-head").forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -326,47 +326,7 @@ tabs.forEach((tab, index) => {
             }
         });
     });
-});      
-
-
-
-
-
-
-/*== counter =========*/
-
-$(document).ready(function () {
-
-    var counted = 0;
-    
-    $(window).scroll(function () {
-      var oTop = $("#counter").offset().top - window.innerHeight;
-      if (counted === 0 && $(window).scrollTop() > oTop) {
-        $(".count").each(function () {
-          var $this = $(this),
-            countTo = $this.attr("data-count");
-          
-          $({ countNum: $this.text() }).animate(
-            { countNum: countTo },
-            {
-              duration: 2000,
-              easing: "swing",
-              step: function () {
-                $this.text(Math.floor(this.countNum));
-              },
-              complete: function () {
-                $this.text(this.countNum);
-              },
-            }
-          );
-        });
-        counted = 1;
-      }
-    });
-
-});
-
-/*==============================*/
+});    
 
 $(".testimonail-carousel1").owlCarousel({
   loop: true,

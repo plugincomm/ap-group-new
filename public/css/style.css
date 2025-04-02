@@ -1731,6 +1731,13 @@ section.section-four .section-four-in .container {
 }
 
 
+.top-section {
+    padding: 300px 0;
+    background: #006e4c;
+    text-align: center;
+    color: #fff;
+}
+
 @media screen and (min-width: 62rem) {
      
     .banner-slider video {

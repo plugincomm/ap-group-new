@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Image from 'next/image'
 //import img from 'next/image'
 import Testimonals from '../components/testimonials'
+import Homecounter from '../components/homeCounter'
 
 export default class IndexPage extends React.Component {
     render() {
@@ -284,39 +285,8 @@ export default class IndexPage extends React.Component {
 		</div>
 		</div>
 		
-		<div className="counters text-center">
-            
-        	<div className="row" id="counter">
-        		<div className="col-xs-6 col-sm-3">                        
-        		<div className="box">          
-        		    <h3>INDUSTRY EXPERIENCE</h3>
-        			<h2 className="my-2"><span className="count" data-count="15">1</span>+ Years</h2>
-        			<p className="textmuted">of Trusted <br/> Expertise</p>
-        		</div>
-        		</div>
-        		<div className="col-xs6 col-sm-3"> 
-        			<div className="box">   
-        			<h3>HERITAGE OF WISDOM</h3>
-        			<h2 className="my-2"><span className="count" data-count="4">0</span> Generations</h2>
-        			<p className="textmuted">in Astrology and Vastu <br/> Expertise</p>
-        			</div>
-        		</div>
-        		<div className="col-xs6 col-sm-3"> 
-        			<div className="box">
-        			<h3>CLIENT SATISFACTION</h3>
-        			<h2 className="my-2"><span className="count" data-count="100">50</span>+</h2>
-        			<p className="textmuted">Across <br/> Diverse Sectors</p>
-        			</div>
-        		</div>
-        		<div className="col-xs6 col-sm-3">    
-        			<div className="box">
-        			<h3>EXTENSIVE SERVICES</h3>
-        			<h2 className="my-2"><span className="count" data-count="5">0</span> Core</h2>
-        			<p className="textmuted">Offerings <br/> Tailored to Your Needs</p>
-        			</div>	
-        		</div>
-        	</div>
-          </div>
+		
+        <Homecounter />	
     </div>
     </div>
  </section>

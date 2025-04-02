@@ -8,7 +8,13 @@ export default class IndexPage extends React.Component {
         return (
             <Layout>
                 {/* <!--================Home Banner Area =================--> */}
-                <h1>Archive Page</h1>
+                <div className="inside top-section">
+                    <div className="container-fluid px-0">
+                        
+                    <h1>Archive Page</h1>
+                     
+                    </div>
+                </div>
                 {/* <!--================Blog Area =================--> */}
             </Layout>
         )
