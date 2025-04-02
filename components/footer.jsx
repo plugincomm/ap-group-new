@@ -17,7 +17,13 @@ export default class AppFooter extends React.Component {
              <div className="row">
                  <div className="col-sm-2">
                      <div className="img-wraper">
-                     <img src="images/footer-logo.png" className="img-fluid" alt="logo" />
+                        <Image
+                            src="/images/footer-logo.png"
+                            width={132}
+                            height={131}
+                            alt="footer logo image"
+                            className="img-fluid"
+                            />                     
                    </div>
                  </div>
                  <div className="first col-lg-5 col-md-6 col-sm-12">
@@ -82,16 +88,72 @@ export default class AppFooter extends React.Component {
      <div className="footer-btm-mid">
        <div className="containers">
        <div className="footer-mid-right">  
-       <p><img src="images/phone.png" /> <a href="#">+91-97171-13399</a>  | <a href="#">  +91-124-4242426</a> </p>
-       <p><a href="mailto:info@ap.group"><img src="images/mailic.png" /> info@ap.group</a></p>
-       <p><img src="images/location.png" /> AP Group, EHTP Urban Estate, Sector - 34, Gurugram - 122001, Haryana, India</p>
+       <p>
+       <Image
+            src="/images/phone.png"
+            width={20}
+            height={21}
+            alt="phone icon"
+            className="img-fluid"
+            />  
+        <a href="#">+91-97171-13399</a>  | <a href="#">  +91-124-4242426</a> </p>
+       <p><a href="mailto:info@ap.group">
+       <Image
+        src="/images/mailic.png"
+        width={20}
+        height={21}
+        alt="mail image"
+        className="img-fluid"
+        />  
+        info@ap.group</a></p>
+       <p>
+       <Image
+        src="/images/location.png"
+        width={20}
+        height={21}
+        alt="location image"
+        className="img-fluid"
+        />  
+         AP Group, EHTP Urban Estate, Sector - 34, Gurugram - 122001, Haryana, India</p>
        </div>
        <div className="footer-mid-left">
        <ul>
-       <li><a href="#"><img src="images/facebook.png" /> </a></li>
-       <li><a href="#"><img src="images/twitter.png" /> </a></li>
-       <li><a href="#"><img src="images/linkedin.png" /> </a></li>
-       <li><a href="#"><img src="images/youtube.png" /> </a></li>
+       <li><a href="#">
+       <Image
+        src="/images/facebook.png"
+        width={40}
+        height={40}
+        alt="facebook icon"
+        className="img-fluid"
+        /> 
+         </a></li>
+       <li><a href="#">
+       <Image
+        src="/images/twitter.png"
+        width={40}
+        height={40}
+        alt="twitter icon"
+        className="img-fluid"
+        /> 
+         </a></li>
+       <li><a href="#">
+       <Image
+        src="/images/linkedin.png"
+        width={40}
+        height={40}
+        alt="linkedin icon"
+        className="img-fluid"
+        /> 
+         </a></li>
+       <li><a href="#">
+       <Image
+        src="/images/youtube.png"
+        width={40}
+        height={40}
+        alt="youtube icon"
+        className="img-fluid"
+        /> 
+        </a></li>
        </ul>
        </div>
        </div>

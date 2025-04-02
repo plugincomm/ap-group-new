@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-//import Image from 'next/image'
+import Image from 'next/image'
 //import img from 'next/image'
 import Testimonals from '../components/testimonials'
 
@@ -15,7 +15,15 @@ export default class IndexPage extends React.Component {
                             <source src="images/AP-grp-hero-video.mp4" type="video/mp4" />
                         </video>
                         <div className="arrow bounce">
-                        <a href="#"><img src="images/icon-chevron-down.png" /></a>
+                            
+                        <a href="#">
+                        <Image
+                            src="/images/icon-chevron-down.png"
+                            width={40}
+                            height={40}
+                            alt="Arrow"
+                            />
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +55,15 @@ export default class IndexPage extends React.Component {
   </div> 
     </div>  
     <div className="col-sm-6">
-      <div className="image"><img src="images/vastu-yantra.gif" className="img-fluid" alt="" />    </div>
+      <div className="image">
+      <Image
+        src="/images/vastu-yantra.gif"
+        width={448}
+        height={449}
+        alt="vastu yantra"
+        className="img-fluid"
+        />
+     </div>
     </div>
   </div>
   </div>
@@ -63,17 +79,41 @@ export default class IndexPage extends React.Component {
             <div className="col01 col">
                 <div className="two-wraper">
                 <a href="#!" className="wraper">
-                 <div className="about-img"><img src="images/business-img1.jpg" className="img-fluid"/></div>
+                 <div className="about-img">
+                 <Image
+        src="/images/business-img1.jpg"
+        width={297}
+        height={318}
+        alt="business image"
+        className="img-fluid"
+        />
+        </div>
                  <h6>Ap Glamray <br/> Solutions Pvt. Ltd.</h6>
                 </a>
                 <a href="#!" className="wraper">
-                 <div className="about-img"><img src="images/business-img2.jpg" className="img-fluid"/></div>
+                 <div className="about-img">
+                 <Image
+        src="/images/business-img2.jpg"
+        width={297}
+        height={318}
+        alt="business image"
+        className="img-fluid"
+        />
+        </div>
                  <h6>Ap Printing <br/> Solutions</h6>
                 </a>
                 </div>
                 
                 <a href="#!" className="wraper">
-                 <div className="about-img"><img src="images/business-img4.jpg" className="img-fluid"/></div>
+                 <div className="about-img">
+                 <Image
+                    src="/images/business-img4.jpg"
+                    width={620}
+                    height={313}
+                    alt="business image"
+                    className="img-fluid"
+                    />
+                </div>
                  <h6>Ap Interior & Design Pvt. Ltd.</h6>
                 </a>
             </div>
@@ -87,16 +127,40 @@ export default class IndexPage extends React.Component {
             </div> */}
             <div className="col03 col">
                 <a href="#!" className="wraper">
-                 <div className="about-img"><img src="images/business-img5.jpg" className="img-fluid"/></div>
+                 <div className="about-img">
+                 <Image
+                    src="/images/business-img5.jpg"
+                    width={620}
+                    height={313}
+                    alt="business image"
+                    className="img-fluid"
+                    />
+                    </div>
                  <h6>Glamray Solutions</h6>
                 </a>
                 <div className="two-wraper">
                 <a href="#!" className="wraper">
-                 <div className="about-img"><img src="images/business-img6.jpg" className="img-fluid"/></div>
+                 <div className="about-img">
+                 <Image
+                    src="/images/business-img6.jpg"
+                    width={297}
+                    height={318}
+                    alt="business image"
+                    className="img-fluid"
+                    />
+                    </div>
                  <h6>Ap Dream Land and <br/> Developments Pvt. Ltd.</h6>
                 </a>
                 <a href="#!" className="wraper">
-                 <div className="about-img"><img src="images/business-img7.jpg" className="img-fluid"/></div>
+                 <div className="about-img">
+                 <Image
+                    src="/images/business-img7.jpg"
+                    width={297}
+                    height={318}
+                    alt="business image"
+                    className="img-fluid"
+                    />
+                    </div>
                  <h6>Fivetech</h6>
                 </a>
                 </div>
@@ -130,7 +194,15 @@ export default class IndexPage extends React.Component {
       </div>
     </div>  
     <div className="col-sm-6">
-      <div className="image"><img src="images/ap-p.png" className="img-fluid" alt=""/>    </div>
+      <div className="image">
+      <Image
+        src="/images/ap-p.png"
+        width={936}
+        height={870}
+        alt="business image"
+        className="img-fluid"
+        />
+    </div>
     </div>
   </div>
   </div>
@@ -149,7 +221,14 @@ export default class IndexPage extends React.Component {
 		<div className="row left">
 			<div className="col-sm-5">
 			<div className="image">
-			<img src="images/p1.png" className="img-fluid"/>
+            <Image
+                src="/images/p1.png"
+                width={359}
+                height={375}
+                alt="Mr. Rajguru Balabaksh Pareek Ji"
+                className="img-fluid"
+                />
+			
 			</div>
 			</div>
 			<div className="col-sm-7">
@@ -170,7 +249,14 @@ export default class IndexPage extends React.Component {
 			</div>
 			<div className="col-sm-5">
 			<div className="image">
-			<img src="images/p2.png" className="img-fluid"/>
+            <Image
+                src="/images/p2.png"
+                width={359}
+                height={375}
+                alt="Mr. Rajguru Laxmi Narayan Pareek"
+                className="img-fluid"
+                />
+			
 			</div>
 			</div>
 		</div>		
@@ -178,7 +264,13 @@ export default class IndexPage extends React.Component {
 		<div className="row left">
 			<div className="col-sm-5">
 			<div className="image">
-			<img src="images/p3.png" className="img-fluid"/>
+            <Image
+                src="/images/p3.png"
+                width={359}
+                height={375}
+                alt="Mr. Dinesh Pareek"
+                className="img-fluid"
+                />						
 			</div>
 			</div>
 			<div className="col-sm-7">
@@ -233,7 +325,15 @@ export default class IndexPage extends React.Component {
 <div className="container">		
   <div className="row">
     <div className="col-sm-6">
-      <div className="image"><img src="images/core-img.png" className="img-fluid" alt=""/>    </div>
+      <div className="image">
+      <Image
+        src="/images/core-img.png"
+        width={936}
+        height={870}
+        alt="Sustainability at Core image"
+        className="img-fluid"
+        />
+    </div>
     </div>
 	<div className="col-sm-6">
 	    <div className="info-wrap">  
@@ -275,7 +375,15 @@ export default class IndexPage extends React.Component {
 			<div className="col-sm-3">
 			<div className="box">
 			<a href="#">
-			<div className="image"><img src="images/blog1.jpg" className="b-img img-fluid" alt=""/></div>  
+			<div className="image">
+            <Image
+            src="/images/blog1.jpg"
+            width={414}
+            height={375}
+            alt="Blog image"
+            className="img-fluid"
+            />
+        </div>  
             <div className="info">
               <h3>The Rise of Astro-Finance: Can Astrology Guide Investments?</h3>     
               <p>March 20&comma; 2025</p>                
@@ -286,7 +394,15 @@ export default class IndexPage extends React.Component {
 			<div className="col-sm-3">
 			<div className="box">
 			<a href="#">
-			<div className="image"><img src="images/blog2.jpg" className="b-img img-fluid" alt=""/></div>  
+			<div className="image">
+            <Image
+            src="/images/blog2.jpg"
+            width={414}
+            height={375}
+            alt="Blog image"
+            className="img-fluid"
+            />
+            </div>  
             <div className="info">
               <h3>How to Remove Negative Energy Using Astrology & Vastu?</h3>     
               <p>March 20&comma; 2025</p>                  
@@ -297,7 +413,15 @@ export default class IndexPage extends React.Component {
 			<div className="col-sm-3">
 			<div className="box">
 			<a href="#">
-			<div className="image"><img src="images/blog3.jpg" className="b-img img-fluid" alt=""/></div>  
+			<div className="image">
+            <Image
+            src="/images/blog3.jpg"
+            width={414}
+            height={375}
+            alt="Blog image"
+            className="img-fluid"
+            />
+            </div>  
             <div className="info">
               <h3>Astrology & AI: Can Computers Predict Your Future?</h3>     
               <p>March 20&comma; 2025</p>                    
@@ -308,7 +432,15 @@ export default class IndexPage extends React.Component {
 			<div className="col-sm-3">
 			<div className="box">
 			<a href="#">
-			<div className="image"><img src="images/blog4.jpg" className="b-img img-fluid" alt=""/></div>  
+			<div className="image">
+            <Image
+            src="/images/blog4.jpg"
+            width={414}
+            height={375}
+            alt="Blog image"
+            className="img-fluid"
+            />
+            </div>  
             <div className="info">
               <h3>Online Kundli Matching: Does It Really Work?</h3>     
               <p>March 20&comma; 2025</p>                     
@@ -331,7 +463,15 @@ export default class IndexPage extends React.Component {
     <div className="container">
         <div className="title-head title-head01 about-rice text-center">
             <p>4.9+ Happy Clients</p>
-            <div className="rating"><img src="images/rating.png" /></div>
+            <div className="rating">
+            <Image
+            src="/images/rating.png"
+            width={158}
+            height={24}
+            alt="rating image"
+            className="img-fluid"
+            />
+            </div>
             <h4>Real Results. Real Transformations. <br/> Now It&apos;s Your Turn.</h4>
         </div>
     </div>

@@ -1732,7 +1732,7 @@ section.section-four .section-four-in .container {
 
 
 @media screen and (min-width: 62rem) {
-    
+     
     .banner-slider video {
         height: 100vh;
         object-fit: cover;

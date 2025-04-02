@@ -15,60 +15,20 @@ export default class AppHeader extends React.Component {
             currentPathName: window.location.pathname
         });
     }
-    render() {
-        let menuItems = [{
-                href: '/',
-                pathname: '/',
-                label: 'Home',
-                classNameName: 'nav-item' + (this.state.currentPathName == '/' ? ' active' : '')
-            }, {
-                href: '/category.html',
-                pathname: '/category.html',
-                label: 'Category',
-                classNameName: 'nav-item' + (this.state.currentPathName == '/category.html' ? ' active' : '')
-            }, {
-                href: '/archive.html',
-                pathname: '/archive.html',
-                label: 'Archive',
-                classNameName: 'nav-item' + (this.state.currentPathName == '/archive.html' ? ' active' : '')
-            }, {
-                href: '#',
-                pathname: '#',
-                label: 'Submenus',
-                classNameName: 'nav-item submenu dropdown' + (this.state.currentPathName == 'single-blog.html' || this.state.currentPathName == 'elements.html' ? ' active' : ''),
-                subs: [{
-                        href: '/single-blog.html',
-                        pathname: '/single-blog.html',
-                        label: 'Blog Details',
-                    }, {
-                        href: '/elements.html',
-                        pathname: '/elements.html',
-                        label: 'Elements',
-                    }
-                ]
-            }, {
-                href: '/single-blog.html',
-                pathname: '/single-blog.html',
-                label: 'Blog Details',
-                classNameName: 'nav-item' + (this.state.currentPathName == '/single-blog.html' ? ' active' : '')
-            }, {
-                href: '/elements.html',
-                pathname: '/elements.html',
-                label: 'Elements',
-                classNameName: 'nav-item' + (this.state.currentPathName == '/elements.html' ? ' active' : '')
-            }, {
-                href: '/contact.html',
-                pathname: '/contact.html',
-                label: 'Contact',
-                classNameName: 'nav-item' + (this.state.currentPathName == '/contact.html' ? ' active' : '')
-            }
-        ];
+    render() {       
         return (
             <>
             <header className="header" id="header">
   <nav className="navbar container">
     <div className="navbar-inner">
-      <Link className="navbar-brand" href="./"><img src="images/logo.png" className="img-fluid  white-logo"/><img src="images/logo.png" className="img-fluid blue-logo"/></Link>
+      <Link className="navbar-brand" href="./">
+        <Image
+            src="/images/logo.png"
+            width={71}
+            height={66}
+            alt="Logo"
+            />
+        </Link>
       <div className="burger" id="burger">
         <span className="burger-line"></span>
         <span className="burger-line"></span>

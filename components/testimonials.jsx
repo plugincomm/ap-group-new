@@ -20,8 +20,8 @@ export default class Testimonals extends React.Component {
                   }}
                   
                   modules={[Autoplay]}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                //onSlideChange={() => console.log('slide change')}
+                //onSwiper={(swiper) => console.log(swiper)}
                 
                 breakpoints={{
                     320: {

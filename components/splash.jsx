@@ -1,5 +1,6 @@
 import React from "react";
 import gsap from "gsap";
+import Image from 'next/image'
 
 export default class Splash extends React.Component {
   componentDidMount() {
@@ -53,9 +54,24 @@ export default class Splash extends React.Component {
     return <>
     
     <div className="splash-screen">
-        <div className="splash-box">
-        <img src="images/footer-logo-top.png" className="img-fluid ft-logo-top" alt="logo"/>
-        <img src="images/footer-logo-btm.png" className="img-fluid ft-logo-btm" alt="logo"/>
+        <div className="splash-box">     
+          <Image
+            src="/images/footer-logo-top.png"
+            width={265}
+            height={215}
+            alt="logo"
+            className="img-fluid ft-logo-top"
+            />   
+
+            <Image
+                    src="/images/footer-logo-btm.png"
+                    width={265}
+                    height={47}
+                    alt="logo"
+                    className="img-fluid ft-logo-btm"
+                    /> 
+
+        
         </div>
     </div>
     
