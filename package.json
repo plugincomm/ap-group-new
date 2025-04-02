@@ -15,10 +15,12 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
-    "lightbox.js-react": "^0.4.9",
-    "next": "13.1.6",
+    "jquery": "^3.7.1",
+    "lightbox.js-react": "^1.4.9",
+    "next": "^15.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-owl-carousel": "^2.3.3",
     "typescript": "4.9.5"
   }
 }

@@ -13,21 +13,24 @@ export default class MyDocument extends Document {
             <Html>
                 <Head>
                    
-                    <link rel="stylesheet" href="/static/assets/template/fantom/css/bootstrap.css" />
-                    <link rel="stylesheet" href="/static/assets/template/fantom/vendors/linericon/style.css" />
-                    <link rel="stylesheet" href="/static/assets/template/fantom/css/font-awesome.min.css" />
-                    <link rel="stylesheet" href="/static/assets/template/fantom/vendors/owl-carousel/owl.carousel.min.css" />
-                    <link rel="stylesheet" href="/static/assets/template/fantom/vendors/lightbox/simpleLightbox.css" />
-                    <link rel="stylesheet" href="/static/assets/template/fantom/vendors/nice-select/css/nice-select.css" />
-                    <link rel="stylesheet" href="/static/assets/template/fantom/vendors/animate-css/animate.css" />
-                    <link rel="stylesheet" href="/static/assets/template/fantom/vendors/jquery-ui/jquery-ui.css" />
-                    {/* <!-- main css --> */}
-                    <link rel="stylesheet" href="/static/assets/template/fantom/css/style.css" />
-                    <link rel="stylesheet" href="/static/assets/template/fantom/css/responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.min.css"  />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+
+
                 </Head>
                 <body>
                     <Main />
                     <NextScript />
+                    {/* <!-- main css --> 
                     <style dangerouslySetInnerHTML={{__html: `.owl-carousel {display: block;}.post_slider_inner.owl-carousel > .item {
                         display: inline-block;
                         width: 25%;
@@ -39,7 +42,17 @@ export default class MyDocument extends Document {
                         .post_slider_inner.owl-carousel > .item:not(:first-of-type) {
                             display: none;
                         }
-                    }`}}></style>
+                    }`}}></style>*/}
+
+                    
+ <script src="js/jquery.min.js"></script>
+ 
+ <script src="js/bootstrap.bundle.min.js" ></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" ></script>
+ <script src="js/owl.carousel.min.js" ></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="js/custom.js" ></script>
                 </body>
             </Html>
         );

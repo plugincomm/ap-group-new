@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout  from '../../components/layout2'
+import Layout  from '../../components/layout'
 
 
 export default class IndexPage extends React.Component {

@@ -19,22 +19,22 @@ export default class AppHeader extends React.Component {
                 href: '/',
                 pathname: '/',
                 label: 'Home',
-                className: 'nav-item' + (this.state.currentPathName == '/' ? ' active' : '')
+                classNameName: 'nav-item' + (this.state.currentPathName == '/' ? ' active' : '')
             }, {
                 href: '/category.html',
                 pathname: '/category.html',
                 label: 'Category',
-                className: 'nav-item' + (this.state.currentPathName == '/category.html' ? ' active' : '')
+                classNameName: 'nav-item' + (this.state.currentPathName == '/category.html' ? ' active' : '')
             }, {
                 href: '/archive.html',
                 pathname: '/archive.html',
                 label: 'Archive',
-                className: 'nav-item' + (this.state.currentPathName == '/archive.html' ? ' active' : '')
+                classNameName: 'nav-item' + (this.state.currentPathName == '/archive.html' ? ' active' : '')
             }, {
                 href: '#',
                 pathname: '#',
                 label: 'Submenus',
-                className: 'nav-item submenu dropdown' + (this.state.currentPathName == 'single-blog.html' || this.state.currentPathName == 'elements.html' ? ' active' : ''),
+                classNameName: 'nav-item submenu dropdown' + (this.state.currentPathName == 'single-blog.html' || this.state.currentPathName == 'elements.html' ? ' active' : ''),
                 subs: [{
                         href: '/single-blog.html',
                         pathname: '/single-blog.html',
@@ -49,90 +49,149 @@ export default class AppHeader extends React.Component {
                 href: '/single-blog.html',
                 pathname: '/single-blog.html',
                 label: 'Blog Details',
-                className: 'nav-item' + (this.state.currentPathName == '/single-blog.html' ? ' active' : '')
+                classNameName: 'nav-item' + (this.state.currentPathName == '/single-blog.html' ? ' active' : '')
             }, {
                 href: '/elements.html',
                 pathname: '/elements.html',
                 label: 'Elements',
-                className: 'nav-item' + (this.state.currentPathName == '/elements.html' ? ' active' : '')
+                classNameName: 'nav-item' + (this.state.currentPathName == '/elements.html' ? ' active' : '')
             }, {
                 href: '/contact.html',
                 pathname: '/contact.html',
                 label: 'Contact',
-                className: 'nav-item' + (this.state.currentPathName == '/contact.html' ? ' active' : '')
+                classNameName: 'nav-item' + (this.state.currentPathName == '/contact.html' ? ' active' : '')
             }
         ];
         return (
-            <header className="header_area">
-                <div className="logo_part">
-                    <div className="container">
-                        <Link className="logo" href="/"><img src="/static/assets/template/fantom/img/logo.png" alt="" /></Link>
-                    </div>
+            <>
+            <header className="header" id="header">
+  <nav className="navbar container">
+    <div className="navbar-inner">
+      <a className="navbar-brand" href="./"><img src="images/logo.png" className="img-fluid  white-logo"/><img src="images/logo.png" className="img-fluid blue-logo"/></a>
+      <div className="burger" id="burger">
+        <span className="burger-line"></span>
+        <span className="burger-line"></span>
+        <span className="burger-line"></span>
+      </div>
+    </div>
+    <div className="navbar-block" id="menu">
+      <ul className="menu">       
+		<li className="menu-item dropdown pos">
+          <a href="#!" className="dropdown-toggle menu-link">
+            About  <span className="arrow is-bottom"></span>
+          </a>  
+			<div className="dropdown-content one-col">
+            <div className="dropdown-column">
+              <div className="dropdown-group">
+                  <p className="title"><b>About</b></p>
+                <ul className="dropdown-items">
+                  <li><a href="#!" className="dropdown-link">About Us</a></li>
+                  <li><a href="#!" className="dropdown-link">Our History</a></li>
+                  <li><a href="#!" className="dropdown-link">Careers</a></li>
+                </ul>				
+              </div>                         
+            </div>
+          </div>
+        </li>
+        <li className="menu-item dropdown">
+          <a href="#!"  className="dropdown-toggle menu-link">
+            Businesses <span className="arrow is-bottom"></span>
+          </a>
+          <div className="dropdown-content multi-col">
+            <div className="dropdown-column">
+              <div className="dropdown-group">
+                <div className="dropdown-title">
+                    <p className="title"><b>Businesses</b></p>
                 </div>
-                <div className="main_menu">
-                    <nav className="navbar navbar-expand-lg navbar-light">
-                        <div className="container">
-                            {/* <!-- Brand and toggle get grouped for better mobile display --> */}
-                            <Link className="navbar-brand logo_h" href="/"><img src="/static/assets/template/fantom/img/logo.png" alt="" /></Link>
-                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                            </button>
-                            {/* <!-- Collect the nav links, forms, and other content for toggling --> */}
-                            <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
-                                <ul className="nav navbar-nav menu_nav">
-                                    {/* <li className="nav-item active"><a className="nav-link" href="/">Home</a></li> 
-                                    <li className="nav-item">
-                                        <Link as="/category.html" href={{pathname: '/category.html'}}>
-                                            <a className="nav-link" href="category.html">Category</a>
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item"><a className="nav-link" href="archive.html">Archive</a></li>
-                                    <li className="nav-item submenu dropdown">
-                                        <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                        <ul className="dropdown-menu">
-                                            <li className="nav-item"><a className="nav-link" href="single-blog.html">Blog Details</a></li>
-                                            <li className="nav-item"><a className="nav-link" href="elements.html">Elements</a></li>
-                                        </ul>
-                                    </li> 
-                                    <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li> */}
+                <ul className="dropdown-items">
+                    <li><a href="#!" className="dropdown-link">
+                      <p><b>Ap Glamray Solutions Pvt.Ltd.</b></p> 
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </a>
+                    </li>
+                    <li><a href="#!" className="dropdown-link">
+                      <p><b>Ap Interior & Design Pvt.Ltd.</b></p> 
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </a>
+                    </li>
+                    <li><a href="#!" className="dropdown-link">
+                      <p><b>Ap Printing Solutions</b></p> 
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </a>
+                    </li>
+                    <li><a href="#!" className="dropdown-link">
+                      <p><b>Astro Vaastupaay by Aditya Pareek Pvt.Ltd.</b></p> 
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </a>
+                    </li>
+                    <li><a href="#!" className="dropdown-link">
+                      <p><b>Glamray Solutions</b></p> 
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </a>
+                    </li>
+                    <li><a href="#!" className="dropdown-link">
+                      <p><b>Ap Dream Land and Developments Pvt.Ltd.</b></p> 
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </a>
+                    </li>
+                    <li><a href="#!" className="dropdown-link">
+                      <p><b>Fivetech</b></p> 
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li className="menu-item">
+          <a href="#!"  className="menu-link">
+            Sustainability
+          </a>          
+        </li>
+		<li className="menu-item dropdown pos">
+          <a href="#!" className="dropdown-toggle menu-link">
+            Resources  <span className="arrow is-bottom"></span>
+          </a>  
+			<div className="dropdown-content one-col">
+            <div className="dropdown-column">
+              <div className="dropdown-group">
+                  <p className="title"><b>Resources</b></p>
+                <ul className="dropdown-items">
+                  <li><a href="#!" className="dropdown-link">Blogs</a></li>
+                  <li><a href="#!" className="dropdown-link">Media</a></li>
+                  <li><a href="#!" className="dropdown-link">Testimonials</a></li>
+                  <li><a href="#!" className="dropdown-link">Downloads</a></li>
+                </ul>				
+              </div>                         
+            </div>
+          </div>
+        </li>
+		
+		
+        <li className="menu-item">
+          <Link href="contact.html"  className="menu-link">
+            Contact
+          </Link>          
+        </li>
+		<li className="menu-item">
+		<a className="nav-link store-btn scroll-btn" href="#!">Enquire Now 
+		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M17 7l-10 10"></path><path d="M8 7l9 0l0 9"></path></svg>
+    	
+        </a> 
+		</li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-                                    {menuItems.map((menu, i) => {
-                                        let subMenus = '';
-                                        if (menu.subs) {
-                                            subMenus = (<ul className="dropdown-menu">
-                                                {menu.subs.map((sm, i) => {
-                                                    return (
-                                                        <li className="nav-item" key={'sm-' + i}>
-                                                            <Link as={sm.href} href={sm.href} className="nav-link">
-                                                                {sm.label}
-                                                            </Link>
-                                                           
-                                                        </li>
-                                                    )
-                                                })}
-                                            </ul>)
-                                        }
-                                        return (
-                                            <li className={menu.className} key={'m-' + i}>
-                                                <Link as={menu.href} href={{pathname: menu.pathname}} className="nav-link">
-                                                    {menu.label}
-                                                </Link>
-                                                {subMenus}
-                                            </li>
-                                        )
-                                    })}
-
-                                </ul>
-                                <ul className="nav navbar-nav navbar-right ml-auto">
-                                    <li className="nav-item"><Link href="#" className="search"><i className="lnr lnr-magnifier"></i></Link></li>
-                                </ul>
-                            </div> 
-                        </div>
-                    </nav>
-                </div>
-            </header>
+<div className="splash-screen">
+    <div className="splash-box">
+    <img src="images/footer-logo-top.png" className="img-fluid ft-logo-top" alt="logo"/>
+    <img src="images/footer-logo-btm.png" className="img-fluid ft-logo-btm" alt="logo"/>
+    </div>
+</div>
+</>
         )
     }
 }

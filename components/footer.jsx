@@ -1,73 +1,130 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+
+
 export default class AppFooter extends React.Component {
     render() {
         return (
-            <footer className="footer-area">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3  col-md-6 col-sm-6">
-                            <div className="single-footer-widget">
-                                <h6 className="footer_title">About Us</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="single-footer-widget">
-                                <h6 className="footer_title">Newsletter</h6>
-                                <p>Stay updated with our latest trends</p>		
-                                <div id="mc_embed_signup">
-                                    <form  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" className="subscribe_form relative">
-                                        <div className="input-group d-flex flex-row">
-                                            <input name="EMAIL" placeholder="Email Address" required="" type="email" />
-                                            <button className="btn sub-btn"><span className="lnr lnr-arrow-right"></span></button>		
-                                        </div>									
-                                        <div className="mt-10 info"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 col-sm-6">
-                            <div className="single-footer-widget instafeed">
-                                <h6 className="footer_title">Instagram Feed</h6>
-                                <ul className="list instafeed d-flex flex-wrap">
-                                    <li><Image src="/static/assets/template/fantom/img/instagram/Image-01.jpg" alt="" fill/></li>
-                                    <li><Image src="/static/assets/template/fantom/img/instagram/Image-02.jpg" alt="" fill/></li>
-                                    <li><Image src="/static/assets/template/fantom/img/instagram/Image-03.jpg" alt="" fill/></li>
-                                    <li><Image src="/static/assets/template/fantom/img/instagram/Image-04.jpg" alt="" fill/></li>
-                                    <li><Image src="/static/assets/template/fantom/img/instagram/Image-05.jpg" alt="" fill/></li>
-                                    <li><Image src="/static/assets/template/fantom/img/instagram/Image-06.jpg" alt="" fill/></li>
-                                    <li><Image src="/static/assets/template/fantom/img/instagram/Image-07.jpg" alt="" fill/></li>
-                                    <li><Image src="/static/assets/template/fantom/img/instagram/Image-08.jpg" alt="" fill/></li>
-                                </ul>
-                            </div>
-                        </div>	
-                        <div className="col-lg-2 col-md-6 col-sm-6">
-                            <div className="single-footer-widget f_social_wd">
-                                <h6 className="footer_title">Follow Us</h6>
-                                <p>Let us be social</p>
-                                <div className="f_social">
-                                    <Link href="#"><i className="fa fa-facebook"></i></Link>
-                                    <Link href="#"><i className="fa fa-twitter"></i></Link>
-                                    <Link href="#"><i className="fa fa-dribbble"></i></Link>
-                                    <Link href="#"><i className="fa fa-behance"></i></Link>
-                                </div>
-                            </div>
-                        </div>						
-                    </div>
-                    <div className="row footer-bottom d-flex justify-content-between align-items-center">
-                        <p className="col-lg-12 footer-text text-center" suppressHydrationWarning={true}>
-                            {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                            All rights reserved | This template is made with
-                            <i className="fa fa-heart-o" aria-hidden="true"></i> by 
-                            <Link href="https://colorlib.com" target="_blank">Colorlib</Link>
-                            {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
-                        </p>
-                    </div>
-                </div>
-            </footer>
+            
+            <>
+
+ <div className="footer">
+ <div className="container-fluid">
+   <div className="container">
+     <div className="row">
+         <div className="col-sm-8">
+             <div className="row">
+                 <div className="col-sm-2">
+                     <div className="img-wraper">
+                     <img src="images/footer-logo.png" className="img-fluid" alt="logo" />
+                   </div>
+                 </div>
+                 <div className="first col-lg-5 col-md-6 col-sm-12">
+                     <div className="wraper">
+                       <h6>Businesses</h6>
+                       <ul>
+                         <li><a href="#!">Ap Glamray Solutions Pvt.Ltd.</a></li>
+                         <li><a href="#!">Ap Interior & Design Pvt.Ltd.</a></li>
+                         <li><a href="#!">Ap Printing Solutions</a></li>
+                         <li><a href="#!">Astro Vaastupaay by Aditya Pareek Pvt.Ltd.</a></li>
+                         <li><a href="#!">Glamray Solutions</a></li>
+                         <li><a href="#!">Ap Dream Land and Developments Pvt.Ltd.</a></li>
+                         <li><a href="#!">Fivetech</a></li>
+                       </ul>
+                     </div>
+                   </div>
+           
+                   <div className="second col-lg-2 col-md-6 col-sm-12">
+                     <div className="wraper">
+                       <h6>Company</h6>
+                       <ul>
+                         <li><a href="#!">About Us</a></li>
+                         <li><a href="#!">Careers</a></li>
+                         <li><a href="#!">Sustainability</a></li>
+                         <li><a href="#!">Contact Us</a></li>
+                        
+                       </ul>
+                     </div>
+                   </div>
+           
+                   <div className="third col-lg-3 col-md-6 col-sm-12">
+                     <div className="wraper">
+                       <h6>Resources</h6>
+                       <ul>
+                         <li><a href="#!">Blogs</a></li>
+                         <li><a href="#!">Media</a></li>
+                         <li><a href="#!">Testimonials</a></li>
+                       </ul>
+                     </div>
+                   </div>
+             </div>
+         </div>
+         <div className="fourth col-sm-4">
+             <div className="wraper">
+              <div className="top">
+               <p><i>Subscribe to our newsletter for exclusive updates, insights, delivered right to your inbox.</i></p>
+               
+                 <div className="newsl">
+                   <input type="text" placeholder="Your email" />
+                    <div className="btns">   
+                        <button type="submit">Subscribe
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M17 7l-10 10"></path><path d="M8 7l9 0l0 9"></path></svg>
+                        </button>
+                     </div>
+                 </div>
+              </div>
+             </div>
+         </div>
+       
+     </div>
+     
+     <div className="footer-btm-mid">
+       <div className="containers">
+       <div className="footer-mid-right">  
+       <p><img src="images/phone.png" /> <a href="#">+91-97171-13399</a>  | <a href="#">  +91-124-4242426</a> </p>
+       <p><a href="mailto:info@ap.group"><img src="images/mailic.png" /> info@ap.group</a></p>
+       <p><img src="images/location.png" /> AP Group, EHTP Urban Estate, Sector - 34, Gurugram - 122001, Haryana, India</p>
+       </div>
+       <div className="footer-mid-left">
+       <ul>
+       <li><a href="#"><img src="images/facebook.png" /> </a></li>
+       <li><a href="#"><img src="images/twitter.png" /> </a></li>
+       <li><a href="#"><img src="images/linkedin.png" /> </a></li>
+       <li><a href="#"><img src="images/youtube.png" /> </a></li>
+       </ul>
+       </div>
+       </div>
+       </div>
+       
+   </div>
+ </div>
+ 
+   <div className="footer-btm">
+       <div className="container">
+       <div className="rows row3">
+       <div className="footer-bottom"><h6>© 2025 AP Group. All rights reserved.</h6></div>
+       <ul className="wraper">
+       <li className="footer-links"><a href="#!">Privacy Policy</a></li>
+       <li className="footer-links"><a href="#!">Terms & Conditions</a></li>
+       <li className="footer-links"><a href="#!">Terms & Conditions</a></li>
+       <li className="footer-links"><a href="#!">Legal Disclaimer</a></li>
+       </ul>
+     </div>
+     </div>
+   </div>
+</div>
+
+<div className="overlay" style={{'display':'none'}}></div>
+<button className="backToTopBtn"><i className="fas fa-angle-up"></i></button>
+
+
+
+
+</>
+
+
+
         )
     }
 }
