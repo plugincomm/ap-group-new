@@ -49,13 +49,14 @@ export default class MyDocument extends Document {
                     }`}}></style>*/}
 
                     
- <Script src="/js/jquery.min.js" />
+
  
- <Script src="/js/bootstrap.bundle.min.js" />
- <Script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" />
+<Script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js" />
  <Script src="/js/owl.carousel.min.js" />
  
 <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" />
+<Script src="/js/jquery.min.js" strategy="beforeInteractive"/>
+<Script src="/js/bootstrap.bundle.min.js" strategy="afterInteractive"/>
 <Script src="/js/custom.js" />
                 </body>
             </Html>

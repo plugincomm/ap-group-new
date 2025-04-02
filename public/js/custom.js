@@ -2,161 +2,6 @@ $(window).on("load", function() {
   $(window).scrollTop(0);
 });
 
-$(document).ready(function(){
-  $(".first-slider").owlCarousel({
-   loop:true,
-   autoplay:true,
-   autoplayTimeout:5000,
-   autoplaySpeed: 3000,
-   autoplayHoverPause:false,
-   responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:1,
-            nav:true,
-            loop:true
-        }
-    }
-  });
-
-  // owl - Carousel2
-  $(".second-slider").owlCarousel({
-   loop:true,
-   dots:false,
-   
-   autoplay:true,
-   autoplayTimeout:3000,
-   autoplaySpeed: 3000,
-   autoplayHoverPause:false,
-   responsive:{
-        0:{
-            items:1,
-            nav:false,
-        },
-        600:{
-            items:2,
-            nav:false,
-        },
-        1000:{
-            items:3,
-            nav:false,
-            loop:true,
-        }
-    }
-  });
-  // owl - Carousel3
-  $(".third-slider").owlCarousel({
-   loop:true,
-   dots:false,
-   nav:true,
-   margin:8,
-   autoplay:false,
-   autoplayTimeout:3000,
-   autoplaySpeed: 3000,
-   autoplayHoverPause:false,
-   responsive:{
-        0:{
-            items:1,
-            nav:false,
-        },
-        600:{
-            items:2,
-            nav:true,
-        },
-        1000:{
-            items:4,
-            nav:true,
-            loop:true,
-        }
-    }
-  });
-  // owl - Carousel4
-  $(".fourth-slider").owlCarousel({
-   loop:true,
-   dots:false,
-   margin:8,
-   autoplay:true,
-   autoplayTimeout:4000,
-   autoplaySpeed: 3000,
-   autoplayHoverPause:false,
-   responsive:{
-        0:{
-            items:1,
-            nav:false,
-        },
-        600:{
-            items:2,
-            nav:false,
-        },
-        1000:{
-            items:4,
-            nav:false,
-            loop:true,
-        }
-    }
-  });
-  
-  $(".product-slider").owlCarousel({
-   loop:true,
-   dots:false,
-   margin:8,
-   autoplay:true,
-   autoplayTimeout:4000,
-   autoplaySpeed: 3000,
-   autoplayHoverPause:false,
-   responsive:{
-        0:{
-            items:1,
-            nav:true,
-        },
-        600:{
-            items:2,
-            nav:true,
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:true,
-        }
-    }
-  });
-  
-  $(".blog-slider").owlCarousel({
-   loop:true,
-   dots:false,
-   margin:30,
-   autoplay:false,
-   autoplayTimeout:2400,
-   autoplaySpeed: 2500,
-   autoplayHoverPause:false,
-   responsive:{
-        0:{
-            items:1,
-            nav:true,
-        },
-        600:{
-            items:2,
-            nav:true,
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:true,
-        }
-    }
-  });
-  
-});
-
-
-
 
 
 
@@ -326,76 +171,18 @@ tabs.forEach((tab, index) => {
             }
         });
     });
-});    
+});      
 
-$(".testimonail-carousel1").owlCarousel({
-  loop: true,
-  margin: 20,
-  dots: false,
-  /*nav: false,
-  navText: [
-    "<i class='fa fa-caret-left'></i>",
-    "<i class='fa fa-caret-right'></i>"
-  ],*/
-  slideTransition: "linear",
-  autoplayTimeout: 4500,
-  autoplayHoverPause: true,
-  autoplaySpeed: 15000,
-  autoplay: true,
-  responsive: {
-    0: {
-        items: 1,
-      stagePadding: 25
-    },
-    600: {
-      items: 1.2,
-      stagePadding: 20
-    },
-    1000: {
-        items: 3.2,
-      stagePadding: 50
-    },
-    1600: {
-      stagePadding: 250
-    }
-  }
-});
 
-$(".testimonail-carousel2").owlCarousel({
-  loop: true,
-  margin: 20,
-  dots: false,
-  /*nav: false,
-  navText: [
-    "<i class='fa fa-caret-left'></i>",
-    "<i class='fa fa-caret-right'></i>"
-  ],*/
-  //slideTransition: "linear",
-  //autoplayTimeout: 4500,
-  autoplayHoverPause: true,
-  autoplaySpeed: 15000,
-  autoplay: true,
-  rtl:true,
-  responsive: {
-    
-    0: {
-        items: 1,
-      stagePadding: 25
-    },
-    600: {
-      items: 1.2,
-      stagePadding: 40
-    },
-    1000: {
-        items: 3.2,
-      stagePadding: 70
-    },
-    1600: {
-      stagePadding: 300
-    }
-  }
-});
 
+
+
+
+/*== counter =========*/
+
+
+
+/*==============================*/
 
 
 function scrollTop() {
